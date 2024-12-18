@@ -1,0 +1,23 @@
+class Solution:
+    def romanToInt(self, s: str) -> int:
+        number = 0
+        while i in range(len(s)):
+            
+            if s[i]=='I' and s[i+1]=='V':
+                number += 4
+                step = 2
+            elif s[i]=='V' and s[i+1]=='I':
+                number += 6
+                stgep =2
+            elif s[i]=='V' and s[i+1]=='I':
+                step =2
+            elif s[i]=='I' and s[i+1] !='V' or s[i-1] !='V' :
+                number += 1
+                step=1
+            #############################
+            
+            i += step
+
+        return number
+
+        
